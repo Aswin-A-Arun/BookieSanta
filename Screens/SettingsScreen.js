@@ -62,10 +62,10 @@ export default class SettingScreen extends Component{
     
     render(){
         return(
-            <View style={StyleSheet.container}/>
+            <View style={styles.container}>
                 <MyHeader title="settings" navigation = {this.props.navigation}/>
-                <View style={StyleSheet.formTextInput}
-                plsaceholder ={"First Name"}
+                <View style={styles.formTextInput}
+                placeholder ={"First Name"}
                 max length ={8}
                 onChangeText={(text)=>{
                     this.setState({
@@ -73,7 +73,7 @@ export default class SettingScreen extends Component{
                     })
                 }}
                 value ={this.state.firstName}
-                />
+                >
                 <TextInput 
                 style={StyleSheet.formTextInput}
                 placeholder ={"Last Name"}            
@@ -103,7 +103,7 @@ export default class SettingScreen extends Component{
                     <Text style={StyleSheet.buttonText}>Save</Text>
                 </TouchableOpacity>
                 </View>
-               </View>
+                </View>
         )
     }
 }
