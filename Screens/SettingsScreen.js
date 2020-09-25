@@ -12,7 +12,7 @@ import MyHeader from '../components/MyHeader'
 import db from '../config'
 import firebase from 'firebase'
 
-export default class SettingScreen extends Component{
+export default class SettingsScreen extends Component{
     constructor(){
         super();
         this.state={

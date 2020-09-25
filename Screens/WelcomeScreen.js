@@ -1,12 +1,21 @@
 import React, {Component} from 'react';
-import {View, StyleSheet,Text,Image,TouchableOpacity,TextInput,Alert,Modal,ScrollView, KeyboardAvoidingView, KeyboardAvoidingViewComponent}from 'react-native'
+import {View, 
+  StyleSheet,
+  Text,
+  Image,
+  TouchableOpacity,
+  TextInput,
+  Alert,
+  Modal,
+  ScrollView,
+   KeyboardAvoidingView,
+  }from 'react-native'
 
-import SantaAnimation from '../components/SantaClaus.js';
+//import SantaAnimation from '../components/SantaClaus.js';
 import db from '../config';
 import firebase from 'firebase';
-import { render } from 'react-dom';
 
-export default class WelcomeScreen extends Component {
+export default class WelcomeScreen extends Component { 
     constructor(){
         super()
         this.state={
@@ -65,7 +74,7 @@ export default class WelcomeScreen extends Component {
     showModal = ()=>{
         return(
         <Modal
-          animationType="fade"
+         //animationType="fade"
           transparent={true}
           visible={this.state.isModalVisible}
           >
@@ -173,7 +182,7 @@ export default class WelcomeScreen extends Component {
         return(
             <View style={StyleSheets.container}>
                 <View style={StyleSheets.profileContainer}>
-                <SantaAnimation/>
+          
                 <Text style={styles.title}>Book santa</Text>
             </View>
             <View style={styles.buttonContainer}>
@@ -323,3 +332,4 @@ const styles = StyleSheet.create({
    fontSize:20
  }
 })
+

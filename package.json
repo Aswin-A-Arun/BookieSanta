@@ -9,21 +9,30 @@
   },
   "dependencies": {
     "all": "0.0.0",
+    "axios": "^0.20.0",
     "expo": "^38.0.0",
+    "expo-cli": "^3.27.8",
+    "expo-image-picker": "~8.3.0",
+    "expo-permissions": "^9.3.0",
     "expo-status-bar": "^1.0.0",
     "global": "^4.4.0",
     "lottie-react-native": "^2.6.1",
+    "permissions": "^0.1.0",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
-    "react-native-swipe-list-view": "^3.2.3",
+    "react-native-elements": "^2.3.2",
+    "react-native-google-books": "^1.0.4",
+    "react-native-swipe-list-view": "^3.2.4",
     "react-native-web": "~0.11.7",
-    "react-navigation-drawer": "^2.5.0",
-    "updates": "^10.3.5"
+    "react-navigation": "^4.4.1",
+    "react-navigation-drawer": "^2.5.1",
+    "updates": "^10.3.6",
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.5",
-    "babel-preset-expo": "^8.2.3"
+    "@babel/core": "^7.11.6",
+    "babel-preset-expo": "^8.3.0"
   },
   "private": true
 }

@@ -1,10 +1,10 @@
 import React from 'React';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import {AppTabNavigator} from './AppTabNavigator'
-import CustomsSideBarMenu from './CustomSideBarMenu';
-import SettingsScreen from '../screens/SettingsScreen';
+import CustomSideBarMenu from '.components/CustomSideBarMenu';
+//import SettingsScreen from '../screens/SettingsScreen';
 import {Icon} from 'react-native-elements'; 
-import SettingScreen from '../../.expo-shared/Screens/SettingsScreen';
+import SettingsScreen from '../../.expo-shared/Screens/SettingsScreen';
 
 export const AppDrawerNavigator = createDrawerNavigator({
     Home : {
@@ -21,7 +21,7 @@ export const AppDrawerNavigator = createDrawerNavigator({
         },
     },
 
-    Notification : { ,
+    Notification : { 
    screen : NotificationScreen,
     navigationOptions : {
         drawerIcon  : <Icon name = "bell" type = "font-awesome" /> ,
@@ -37,11 +37,11 @@ myRecievedBooks : {
 },
 
 Setting : {
-    screen: SettingScreen,
+    screen: SettingsScreen,
     navigationOptions : {
         drawerIcon : <Icon name = "settings" type= "font-awesome"/>,
         drawerLabel : "settings"
 
     }
 }
-}, 
+})

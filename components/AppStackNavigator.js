@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'React';  
 import { createStackNavigator } from 'react-navigation-stack';
 
 import BookDonateScreen from '../screens/BookDonateScreen';
